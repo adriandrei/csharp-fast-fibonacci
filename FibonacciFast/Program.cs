@@ -28,7 +28,7 @@ namespace FibonacciFast
             _stack.Add(new Tuple<int, Tuple<int, int>>(_number, new Tuple<int, int>(_number / 2, _number / 2 + 1)));
 
             // Here we create the entire stack of Tuples
-            _stack = CreateStack(_stack);
+            CreateStack(_stack);
 
             // Do the magic
             CreateFibonacci();
